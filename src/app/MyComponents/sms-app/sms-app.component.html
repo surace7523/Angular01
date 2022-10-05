@@ -1,0 +1,33 @@
+<p>sms-app works!</p>
+<section>
+
+    <div class="container">
+        <p class="h4">SMS APP</p>
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="card">
+                    .
+                    <div class="card-header">
+
+                        <form>
+                            <textarea rows="4" class="box" name="message" [(ngModel)]="message" maxlength="200">
+
+                                </textarea>
+                        </form>
+
+                        {{message}}
+                    </div>
+                    <div class="card-footer">
+
+                        <p>The character remaining</p>
+                        <span>{{message.length}}/200</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>

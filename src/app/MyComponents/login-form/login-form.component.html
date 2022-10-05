@@ -1,0 +1,13 @@
+<p>oneway data binding</p>
+{{username}}
+
+<p>Twoway data binding</p>
+<input type="text" (input)="updateInput($event)" [value]="username">
+<h3>Form automated 2 way binding USING NGMODEL</h3>
+<section>
+
+
+    <form>
+        <input type="text" name="username" [(ngModel)]="username">
+    </form>
+</section>

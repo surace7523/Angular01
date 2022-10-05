@@ -1,0 +1,28 @@
+.container{
+
+    background-color: rgb(185, 199, 199);
+    height: auto;
+    width: 400px;
+    align-items: center;
+    align-content: center;
+}
+
+.card-header{
+
+    background-color: rgb(253, 255, 255);
+    height: auto;
+    
+   
+}
+.form-control{
+
+    align-items: center;
+    align-content: center;
+    
+}
+
+
+.box{
+
+    width: 390px;
+}

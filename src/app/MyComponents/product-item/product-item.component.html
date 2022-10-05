@@ -1,0 +1,48 @@
+<p>product-item works!</p>
+<section class="mt-3">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col">
+                <table class="table-container">
+                    <thead class="tableHead">
+                        <tr>
+                            <th>sNO</th>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+
+
+
+                    <tbody>
+                        <tr>
+
+                            <td>{{product.sno}}</td>
+
+                            <td><img [src]="product.image" alt="" width="50" height="50"></td>
+                            <td>{{product.name}}</td>
+                            <td>{{product.price}}</td>
+                            <td>
+                                <i (click)="decrementQty()" class="minus">&#8722;</i>
+                                {{product.qty}}
+                                <i (click)="incrementQty()" class="plus">&#43;</i>
+                            </td>
+                            <td>{{product.price*product.qty}}</td>
+
+
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</section>
